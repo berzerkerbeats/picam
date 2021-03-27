@@ -1,3 +1,3 @@
 import recordVideo
 
-recordVideo.camera()
+recordVideo.startRec()
