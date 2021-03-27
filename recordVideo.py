@@ -1,8 +1,10 @@
 import picamera
 import filepath
-import time
+from datetime import datetime
 
-timeStamp = time.localtime()
+now = datetime.now()
+
+timeStamp = now.strftime("%m/%d/%Y %H:%M:%S")
 print(timeStamp)
 
 
