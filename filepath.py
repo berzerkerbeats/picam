@@ -5,12 +5,12 @@ camera_Log = "/home/pi/picam/logs"
 
 
 def cameraPic(timeStamp):
-    return camera_Pic + "{timeStamp}" + ".h264"
+    return camera_Pic + timeStamp + ".h264"
 
 
 def cameraVid(timeStamp):
-    return camera_Vid + "{timeStamp}" + ".h264"
+    return camera_Vid + timeStamp + ".h264"
 
 
 def cameraLog(timeStamp):
-    return camera_Log + "{timeStamp}" + ".h264"
+    return camera_Log + timeStamp + ".h264"
