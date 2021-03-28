@@ -4,7 +4,7 @@ from datetime import datetime
 
 now = datetime.now()
 
-timeStamp = now.strftime("%m/%d/%Y %H:%M:%S")
+timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 print(timeStamp)
 
 
