@@ -1,8 +1,8 @@
 
 
-camera_Pic = "/home/pi/picam/pictures"
-camera_Vid = "/home/pi/picam/videos"
-camera_Log = "/home/pi/picam/logs"
+camera_Pic = "/home/pi/picam/pictures/"
+camera_Vid = "/home/pi/picam/videos/"
+camera_Log = "/home/pi/picam/logs/"
 
 
 def cameraPic(timeStamp):
