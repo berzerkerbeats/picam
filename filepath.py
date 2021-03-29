@@ -6,19 +6,16 @@ camera_Log = "/home/pi/picam/logs/"
 
 
 def cameraPic(timeStamp):
-    try:
-        if os.makedirs(camera_Pic, True) == True:
-            print("Path " + camera_Pic + " Already exist")
-        else:
-            os.makedirs(camera_Pic, True)
-            return camera_Pic + timeStamp + ".h264"
-    except OSError:
-        print("Directory can not be created")
-    return camera_Pic + timeStamp + ".h264"
+    print(str(os.path.isdir(camera_Pic)))
+    if os.path.isdir(camera_Pic) == True:
+        print("Path: " + camera_Pic + " Already exist")
+        return camera_Pic + timeStamp + ".h264"
+    else:
+        os.makedirs(camera_Pic)
+        return camera_Pic + timeStamp + ".h264"
 
 
 def cameraVid(timeStamp):
-    # try:
     print(str(os.path.isdir(camera_Vid)))
     if os.path.isdir(camera_Vid) == True:
         print("Path: " + camera_Vid + " Already exist")
@@ -27,18 +24,12 @@ def cameraVid(timeStamp):
         os.makedirs(camera_Vid)
         return camera_Vid + timeStamp + ".h264"
 
-    # except OSError:
-    # print("Directory can not be created")
-    # return camera_Vid + timeStamp + ".h264"
-
 
 def cameraLog(timeStamp):
-    try:
-        if os.makedirs(camera_Log, True) == True:
-            print("Path " + camera_Log + " Already exist")
-        else:
-            os.makedirs(camera_Log, True)
-            return camera_Log + timeStamp + ".h264"
-    except OSError:
-        print("Directory can not be created")
-    return camera_Log + timeStamp + ".h264"
+    print(str(os.path.isdir(camera_Log)))
+    if os.path.isdir(camera_Log) == True:
+        print("Path: " + camera_Log + " Already exist")
+        return camera_Log + timeStamp + ".h264"
+    else:
+        os.makedirs(camera_Log)
+        return camera_Log + timeStamp + ".h264"
