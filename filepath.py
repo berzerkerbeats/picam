@@ -12,21 +12,21 @@ def cameraPic(timeStamp):
         else:
             os.makedirs(camera_Pic, True)
             return camera_Pic + timeStamp + ".h264"
-    except OSError as error:
+    except OSError:
         print("Directory can not be created")
     return camera_Pic + timeStamp + ".h264"
 
 
 def cameraVid(timeStamp):
-    try:
-        if os.makedirs(camera_Vid, True) == True:
-            print("Path " + camera_Vid + " Already exist")
-        else:
-            os.makedirs(camera_Vid, True)
-            return camera_Vid + timeStamp + ".h264"
-    except OSError as error:
-        print("Directory can not be created")
-    return camera_Vid + timeStamp + ".h264"
+    # try:
+    if os.makedirs(camera_Vid, True) == True:
+        print("Path " + camera_Vid + " Already exist")
+    else:
+        os.makedirs(camera_Vid, True)
+        return camera_Vid + timeStamp + ".h264"
+    # except OSError:
+    # print("Directory can not be created")
+    # return camera_Vid + timeStamp + ".h264"
 
 
 def cameraLog(timeStamp):
@@ -36,6 +36,6 @@ def cameraLog(timeStamp):
         else:
             os.makedirs(camera_Log, True)
             return camera_Log + timeStamp + ".h264"
-    except OSError as error:
+    except OSError:
         print("Directory can not be created")
     return camera_Log + timeStamp + ".h264"
