@@ -19,7 +19,7 @@ def cameraPic(timeStamp):
 
 def cameraVid(timeStamp):
     # try:
-    if os.path.exists(camera_Vid + timeStamp) is True:
+    if os.path.isdir(camera_Vid) == True:
         print("Path " + camera_Vid + " Already exist")
     else:
         os.makedirs(camera_Vid)
