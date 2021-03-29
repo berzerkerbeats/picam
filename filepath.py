@@ -21,7 +21,8 @@ def cameraVid(timeStamp):
     # try:
     # print(str(os.path.isdir(camera_Vid + timeStamp + ".h264")))
     if os.path.isdir(camera_Vid + timeStamp + ".h264") == False:
-        return os.makedirs(camera_Vid + timeStamp + ".h264")
+        os.makedirs(camera_Vid)
+        return camera_Vid + timeStamp + ".h264"
     else:
         print("Path: " + camera_Vid + " Already exist")
     # except OSError:
