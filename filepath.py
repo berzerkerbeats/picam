@@ -19,6 +19,7 @@ def cameraPic(timeStamp):
 
 def cameraVid(timeStamp):
     # try:
+    print(str(os.path.isdir(camera_Vid + timeStamp + ".h264")))
     if os.path.isdir(camera_Vid + timeStamp + ".h264") == True:
         print("Path: " + camera_Vid + " Already exist")
     else:
