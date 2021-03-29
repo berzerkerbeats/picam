@@ -9,10 +9,10 @@ def cameraPic(timeStamp):
     print(str(os.path.isdir(camera_Pic)))
     if os.path.isdir(camera_Pic) == True:
         print("Path: " + camera_Pic + " Already exist")
-        return camera_Pic + timeStamp + ".h264"
+        return camera_Pic + timeStamp + ".jpg"
     else:
         os.makedirs(camera_Pic)
-        return camera_Pic + timeStamp + ".h264"
+        return camera_Pic + timeStamp + ".jpg"
 
 
 def cameraVid(timeStamp):
@@ -29,7 +29,7 @@ def cameraLog(timeStamp):
     print(str(os.path.isdir(camera_Log)))
     if os.path.isdir(camera_Log) == True:
         print("Path: " + camera_Log + " Already exist")
-        return camera_Log + timeStamp + ".h264"
+        return camera_Log + timeStamp + ".txt"
     else:
         os.makedirs(camera_Log)
-        return camera_Log + timeStamp + ".h264"
+        return camera_Log + timeStamp + ".txt"
