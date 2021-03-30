@@ -12,9 +12,9 @@ print("Gonna take a Pic")
 
 
 def startPic():
-    camera = picamera.PiCamera()
-    camera.resolution = (1280, 720)
-    camera.capture(filepath.cameraPic(timeStamp))
+    with picamera.PiCamera() as camera:
+        camera.resolution = (1280, 720)
+        camera.capture(filepath.cameraPic(timeStamp))
 
 
 print("Took a Pic")
