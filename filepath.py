@@ -33,7 +33,7 @@ def cameraLog(timeStamp):
     print(str(os.path.isdir(camera_Log)))
     if os.path.isdir(camera_Log) == True:
         print("Path: " + camera_Log + " Already exist")
-        return camera_Log + timeStamp + ".txt"
+        return camera_Log + timeStamp + ".log"
     else:
         os.makedirs(camera_Log)
-        return camera_Log + timeStamp + ".txt"
+        return camera_Log + timeStamp + ".log"
