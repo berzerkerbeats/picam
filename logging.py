@@ -6,7 +6,7 @@ now = datetime.now()
 
 timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 
-# logging.basicConfig(filename=filepath.camera_Log, filemode=str)
+logging.basicConfig(filename=filepath.camera_Log, level=logging.INFO)
 logging.info(timeStamp + "on")
 
 
