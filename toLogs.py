@@ -7,7 +7,6 @@ now = datetime.now()
 timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 
 logging.basicConfig(filename=filepath.camera_Log, level=logging.INFO)
-logging.info(timeStamp + "on")
 
 
 def writeToLog(logs):
@@ -17,3 +16,6 @@ def writeToLog(logs):
 
 def logText(logs):
     return str(logs)
+
+
+writeToLog(logging.info(timeStamp + "on"))
