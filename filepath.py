@@ -20,7 +20,7 @@ def cameraPic(timeStamp):
 
 def cameraVid(timeStamp):
     print(str(os.path.isdir(camera_Vid)))
-    logging.writeToLog(str(os.path.isdir(camera_Vid)))
+    logging.writeToLog(os.path.isdir(camera_Vid))
     print("Started Recording")
     logging.writeToLog(timeStamp + "Started Recording")
     if os.path.isdir(camera_Vid) == True:
