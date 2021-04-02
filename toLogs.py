@@ -10,7 +10,7 @@ logging.basicConfig(filename="/home/pi/picam/logs/", level=logging.INFO)
 
 
 def writeToLog(logs):
-    toWrite = open(filepath.cameraLog(timeStamp), "a")
+    toWrite = open("/home/pi/picam/logs/" + timeStamp, "a")
     toWrite.write(logText(logs))
 
 
