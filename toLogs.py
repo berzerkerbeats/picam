@@ -18,4 +18,5 @@ def logText(logs):
     return str(logs)
 
 
+# this gotta be fixed
 writeToLog(logging.info(timeStamp + "on"))
