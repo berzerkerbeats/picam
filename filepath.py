@@ -23,6 +23,7 @@ def cameraVid(timeStamp):
     print(str(os.path.isdir(camera_Vid)))
     cameraLog(timeStamp, logging.info(os.path.isdir(camera_Vid)))
     print("Started Recording")
+    cameraLog(timeStamp, logging.info(timeStamp + "Started Recording"))
     logging.info(timeStamp + "Started Recording")
     if os.path.isdir(camera_Vid) == True:
         print("Path: " + camera_Vid + " Already exist")
@@ -31,6 +32,7 @@ def cameraVid(timeStamp):
         os.makedirs(camera_Vid)
         return camera_Vid + timeStamp + ".h264"
     print("Done Recording")
+    cameraLog(timeStamp, logging.info(timeStamp + "Done Recording"))
     logging.info(timeStamp + "Done Recording")
 
 
