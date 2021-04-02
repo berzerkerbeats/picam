@@ -19,4 +19,4 @@ def logText(logs):
 
 
 # this gotta be fixed
-writeToLog(logging.info(timeStamp + "on"))
+# writeToLog(logging.info(timeStamp + "on"))
