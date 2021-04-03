@@ -6,7 +6,8 @@ now = datetime.now()
 
 timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 
-logging.basicConfig(filename="/home/pi/picam/logs/", level=logging.INFO)
+logging.basicConfig(filename="/home/pi/picam/logs/" +
+                    timeStamp, level=logging.INFO)
 
 
 def writeToLog(logs):
