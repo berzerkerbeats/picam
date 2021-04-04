@@ -13,6 +13,7 @@ logging.basicConfig(filename="/home/pi/picam/logs/" +
 def writeToLog(logs):
     toWrite = open("/home/pi/picam/logs/" + timeStamp + ".log", "a")
     toWrite.write(logText(logs))
+    toWrite.close()
 
 
 def logText(logs):
