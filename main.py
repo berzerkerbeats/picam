@@ -5,7 +5,7 @@ import time
 
 def main():
     recordVideo.startRec()
-    time.sleep(20)
+    time.sleep(5)
     takePic.startPic()
 
 
