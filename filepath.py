@@ -35,6 +35,7 @@ def cameraVid(timeStamp):
     print("Done Recording")
     cameraLog(timeStamp, logging.info(timeStamp + " Done Recording"))
     logging.info(timeStamp + "Done Recording")
+    cameraLog(timeStamp, logging.info(timeStamp + "Done Recording"))
 
 # have to create the logs dir mannually
 
