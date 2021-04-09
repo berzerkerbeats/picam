@@ -42,7 +42,7 @@ def cameraVid(timeStamp):
 
 def cameraLog(timeStamp, logs):
 
-    if os.path.isdir(camera_Log) == True:
+    if os.path.isdir(camera_Log):
         try:
             print("Path: " + camera_Log + " Already exist")
             toLogs.writeToLog(logs)
