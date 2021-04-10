@@ -11,7 +11,7 @@ logging.basicConfig(format='%(asctime)s %(message)s',
 
 
 def writeToLog(logs):
-    toWrite = open("/home/pi/picam/logs/", "a")
+    toWrite = open("/home/pi/picam/logs/")
     toWrite.write(logs)
     toWrite.close()
 

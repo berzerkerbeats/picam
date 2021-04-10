@@ -21,11 +21,10 @@ def cameraPic(timeStamp):
 
 def cameraVid(timeStamp):
     print(str(os.path.isdir(camera_Vid)))
-    cameraLog(timeStamp, logging.info(os.path.isdir(camera_Vid)))
+    cameraLog(logging.info(os.path.isdir(camera_Vid)))
     print("Started Recording")
-    cameraLog(timeStamp, logging.info(timeStamp + " Started Recording"))
-    logging.info(timeStamp + "Started Recording")
-    logging.info(logging.info(timeStamp + " Started Recording"))
+    cameraLog(logging.info(" Started Recording"))
+    logging.info("Started Recording")
     if os.path.isdir(camera_Vid) == True:
         print("Path: " + camera_Vid + " Already exist")
         return camera_Vid + timeStamp + ".h264"
@@ -33,23 +32,23 @@ def cameraVid(timeStamp):
         os.makedirs(camera_Vid)
         return camera_Vid + timeStamp + ".h264"
     print("Done Recording")
-    cameraLog(timeStamp, logging.info(timeStamp + " Done Recording"))
-    logging.info(timeStamp + "Done Recording")
-    cameraLog(timeStamp, logging.info(timeStamp + "Done Recording"))
+    cameraLog(logging.info(" Done Recording"))
+    logging.info("Done Recording")
+    cameraLog(logging.info("Done Recording"))
 
 # have to create the logs dir mannually
 
 
-def cameraLog(timeStamp, logs):
+def cameraLog(logs):
 
     if os.path.isdir(camera_Log):
         try:
             print("Path: " + camera_Log + " Already exist")
-            toLogs.writeToLog(logs)
-            return camera_Log + timeStamp + ".log"
+            #  camera_Log + timeStamp + ".log"
+            return toLogs.writeToLog(logs)
         except OSError:
             pass
     else:
         os.makedirs(camera_Log)
-        toLogs.writeToLog(logs)
-        return camera_Log + timeStamp + ".log"
+        # camera_Log + timeStamp + ".log"
+        return toLogs.writeToLog(logs)
