@@ -6,7 +6,8 @@ now = datetime.now()
 
 timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 
-logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
+logging.basicConfig(format='%(levelname)s:%(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p')
 
 
 def writeToLog(logs):
