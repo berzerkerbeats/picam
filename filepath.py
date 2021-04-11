@@ -32,8 +32,6 @@ def cameraVid(timeStamp):
         os.makedirs(camera_Vid)
         return camera_Vid + timeStamp + ".h264"
     print("Done Recording")
-    cameraLog(logging.info(" Done Recording"))
-    logging.info("Done Recording")
     cameraLog(logging.info("Done Recording"))
 
 # have to create the logs dir mannually
