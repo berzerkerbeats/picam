@@ -12,7 +12,7 @@ logging.basicConfig(format='%(levelname)s:%(message)s',  level=logging.DEBUG,
 
 def writeToLog(logs):
     toWrite = open("/home/pi/picam/logs/" + timeStamp, "a")
-    toWrite.write(str(logs))
+    toWrite.write(logs)
     toWrite.close()
 
 
