@@ -27,13 +27,9 @@ def cameraVid(timeStamp):
 
     print(str(os.path.isdir(camera_Vid)))
     print(str(logging.info(os.path.isdir(camera_Vid))))
-<<<<<<< HEAD
-    cameraLog(logging.info(os.path.isdir(camera_Vid)).__str__())
-=======
 
     cameraLog(logging.info(os.path.isdir(camera_Vid)))
 
->>>>>>> e2df2da4d46a558282cc285cc079c18d27f0f75d
     print("Started Recording")
 
     cameraLog(str(logging.info(" Started Recording")))
