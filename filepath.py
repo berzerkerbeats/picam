@@ -24,7 +24,7 @@ def cameraVid(timeStamp):
     print(str(logging.info(os.path.isdir(camera_Vid))))
     cameraLog(logging.info(os.path.isdir(camera_Vid)).__str__())
     print("Started Recording")
-    cameraLog(logging.info(" Started Recording"))
+    cameraLog(str(logging.info(" Started Recording")))
     logging.info("Started Recording")
     if os.path.isdir(camera_Vid) == True:
         print("Path: " + camera_Vid + " Already exist")
