@@ -22,7 +22,7 @@ def cameraPic(timeStamp):
 def cameraVid(timeStamp):
     print(str(os.path.isdir(camera_Vid)))
     print(str(logging.info(os.path.isdir(camera_Vid))))
-    cameraLog(logging.info(os.path.isdir(camera_Vid)))
+    cameraLog(logging.info(os.path.isdir(camera_Vid)).__str__())
     print("Started Recording")
     cameraLog(logging.info(" Started Recording"))
     logging.info("Started Recording")
