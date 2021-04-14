@@ -14,7 +14,7 @@ def cameraPic(timeStamp):
 
     if os.path.isdir(camera_Pic) == True:
         print()
-        print(cameraLog(str(logging.info("Path: " + camera_Pic + " Already exist"))))
+        print(cameraLog(str(logging.info(" Path: " + camera_Pic + " Already exist"))))
         return camera_Pic + timeStamp + ".jpg"
 
     else:
@@ -31,10 +31,10 @@ def cameraVid(timeStamp):
 
     cameraLog(logging.info(os.path.isdir(camera_Vid)))
 
-    print(cameraLog(str(logging.info(" Started Recording"))))
+    print(str(logging.info(" Started Recording")))
 
     if os.path.isdir(camera_Vid) == True:
-        print("Path: " + camera_Vid + " Already exist")
+        print(logging.info(" Path: " + camera_Vid + " Already exist"))
         return camera_Vid + timeStamp + ".h264"
 
     else:
