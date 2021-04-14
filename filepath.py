@@ -40,14 +40,16 @@ def cameraVid(timeStamp):
 
 def cameraLog(logs):
 
+    os.makedirs(camera_Log)
     if os.path.isdir(camera_Log):
         try:
             print("Path: " + camera_Log + " Already exist")
-            #  camera_Log + timeStamp + ".log"
-            return toLogs.writeToLog(logs)
+            toLogs.writeToLog(logs)
+            return camera_Log + toLogs.timeStamp + ".log"
         except OSError:
             pass
     else:
+        print(str(logging.critical("Could not make dir " + camera_Log + " check systems")))
         os.makedirs(camera_Log)
         # camera_Log + timeStamp + ".log"
         return toLogs.writeToLog(logs)
