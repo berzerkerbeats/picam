@@ -6,7 +6,7 @@ now = datetime.now()
 
 timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 
-logging.basicConfig(filename="/home/pi/picam/logs/" + timeStamp, format='%(levelname)s:%(message)s',  level=logging.DEBUG,
+logging.basicConfig(filename="/home/pi/picam/logs/" + timeStamp, format='%(asctime)s:%(message)s',  level=logging.DEBUG,
                     datefmt='%m/%d/%Y %I:%M:%S %p')
 
 
