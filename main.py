@@ -7,11 +7,11 @@ import filepath
 
 def main():
     recordVideo.startRec()
-    filepath.cameraLog(logging.info(" Done Recording"))
+    filepath.cameraLog(str(logging.info(" Done Recording")))
     logging.info("Done Recording")
     time.sleep(5)
     takePic.startPic()
-    filepath.cameraLog(logging.info(" Done with photo"))
+    filepath.cameraLog(str(logging.info(" Done with photo")))
     logging.info(" Done with photo")
 
 
