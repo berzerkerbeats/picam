@@ -3,6 +3,7 @@ import takePic
 import time
 import logging
 import filepath
+import CheckStorage
 
 
 def main():
@@ -11,6 +12,7 @@ def main():
     time.sleep(5)
     takePic.startPic()
     filepath.cameraLog(str(logging.info(" Done with photo")))
+    CheckStorage.checkSizeOfAllVidoes()
 
 
 if __name__ == '__main__':
