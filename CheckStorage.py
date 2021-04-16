@@ -4,13 +4,12 @@ import filepath
 
 
 def checkSizeOfAllVidoes():
-    totalSizeOfVid = subprocess.Popen(shlex.split(
-        ['home/pi/picam/videos/', '-cmd', "sudo du -sh"]))
+    totalSizeOfVid = subprocess.Popen(shlex.split('sudo du -sh videos/'))
     filepath.cameraLog(totalSizeOfVid)
     print(totalSizeOfVid)
 
 
 def checkSizeOfAllPics():
-    totalSizeOfPic = subprocess.Popen(["sudo du -sh home/pi/picam/pictures/"])
+    totalSizeOfPic = subprocess.Popen('sudo du -sh pictures/')
     filepath.cameraLog(totalSizeOfPic)
     print(totalSizeOfPic)
