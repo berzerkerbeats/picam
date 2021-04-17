@@ -12,9 +12,9 @@ def main():
     time.sleep(5)
     takePic.startPic()
     logging.info(" Done with photo")
-    CheckStorage.checkSizeOfAllVidoes()
-    CheckStorage.checkSizeOfAllPics()
-    CheckStorage.checkSizeOfAllLogs()
+    logging.info(CheckStorage.checkSizeOfAllVidoes())
+    logging.info(CheckStorage.checkSizeOfAllPics())
+    logging.info(CheckStorage.checkSizeOfAllLogs())
 
 
 if __name__ == '__main__':
