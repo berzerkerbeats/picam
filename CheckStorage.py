@@ -6,7 +6,7 @@ import filepath
 
 def checkSizeOfAllVidoes():
     totalSizeOfVid = subprocess.Popen(shlex.split('sudo du -sh videos/'))
-    stringOfTotalSizeOfVid = check_output(totalSizeOfVid)
+    stringOfTotalSizeOfVid = totalSizeOfVid.communicate()[0]
     filepath.cameraLog(str(stringOfTotalSizeOfVid))
     print(totalSizeOfVid)
 
