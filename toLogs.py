@@ -14,7 +14,3 @@ def writeToLog(logs):
     toWrite = open("/home/pi/picam/logs/" + timeStamp, "a")
     toWrite.write(logs)
     toWrite.close()
-
-
-# this gotta be fixed
-# writeToLog(logging.info(timeStamp + "on"))
