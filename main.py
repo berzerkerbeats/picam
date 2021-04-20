@@ -13,8 +13,8 @@ def main():
     takePic.startPic()
     logging.info(" Done with photo")
     CheckStorage.checkSizeOfAllVidoes()
-    CheckStorage.checkSizeOfAllPics()
-    CheckStorage.checkSizeOfAllLogs()
+    # CheckStorage.checkSizeOfAllPics()
+    # CheckStorage.checkSizeOfAllLogs()
 
 
 if __name__ == '__main__':

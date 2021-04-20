@@ -7,7 +7,7 @@ import logging
 
 def checkSizeOfAllVidoes():
     totalSizeOfVid = subprocess.Popen(shlex.split(
-        'sudo du -sh videos/'), stdout=subprocess.PIPE, stderr=None, shell=True)
+        'sudo du -sh videos/'), stdout=subprocess.PIPE)
     stringOfTotalSizeOfVid = totalSizeOfVid.communicate()[0]
     # filepath.cameraLog(str(stringOfTotalSizeOfVid))
     print(totalSizeOfVid)
@@ -16,7 +16,7 @@ def checkSizeOfAllVidoes():
 
 def checkSizeOfAllPics():
     totalSizeOfPic = subprocess.Popen(shlex.split(
-        'sudo du -sh pictures/'), stdout=subprocess.PIPE, stderr=None, shell=True)
+        'sudo du -sh pictures/'), stdout=subprocess.PIPE)
     stringOfTotalSizeOfPic = totalSizeOfPic.communicate()[0]
     # filepath.cameraLog(str(totalSizeOfPic))
     print(totalSizeOfPic)
@@ -25,7 +25,7 @@ def checkSizeOfAllPics():
 
 def checkSizeOfAllLogs():
     totalSizeOfLogs = subprocess.Popen(shlex.split(
-        'sudo du -sh logs/'), stdout=subprocess.PIPE, stderr=None, shell=True)
+        'sudo du -sh logs/'), stdout=subprocess.PIPE)
     stringOfTotalSizeOfLogs = totalSizeOfLogs.communicate()[0]
     # filepath.cameraLog(str(totalSizeOfLogs))
     print(totalSizeOfLogs)
