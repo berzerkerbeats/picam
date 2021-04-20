@@ -11,7 +11,8 @@ def checkSizeOfAllVidoes():
     stringOfTotalSizeOfVid = totalSizeOfVid.communicate()[0]
     # filepath.cameraLog(str(stringOfTotalSizeOfVid))
     print(totalSizeOfVid)
-    print(logging.info(stringOfTotalSizeOfVid))
+    print(stringOfTotalSizeOfVid)
+    logging.info(str(stringOfTotalSizeOfVid))
 
 
 def checkSizeOfAllPics():
