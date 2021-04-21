@@ -7,6 +7,7 @@ import CheckStorage
 
 
 def main():
+    filepath.cameraLogMkdir()
     recordVideo.startRec()
     logging.info(" Done Recording")
     print(" Done Recording")
@@ -15,8 +16,9 @@ def main():
     logging.info(" Done with photo")
     print(" Done with photo")
     CheckStorage.checkSizeOfAllVidoes()
-    # CheckStorage.checkSizeOfAllPics()
-    # CheckStorage.checkSizeOfAllLogs()
+    CheckStorage.checkSizeOfAllPics()
+    CheckStorage.checkSizeOfAllLogs()
+    print("found the storage size ")
 
 
 if __name__ == '__main__':
