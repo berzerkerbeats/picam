@@ -10,9 +10,8 @@ def checkSizeOfAllVidoes():
         'sudo du -sh videos/'), stdout=subprocess.PIPE)
     stringOfTotalSizeOfVid = totalSizeOfVid.communicate()[0]
     # filepath.cameraLog(str(stringOfTotalSizeOfVid))
-    print(totalSizeOfVid)
     print(stringOfTotalSizeOfVid)
-    logging.info(str(stringOfTotalSizeOfVid))
+    logging.info("The Current size is " + str(stringOfTotalSizeOfVid))
 
 
 def checkSizeOfAllPics():
@@ -20,8 +19,8 @@ def checkSizeOfAllPics():
         'sudo du -sh pictures/'), stdout=subprocess.PIPE)
     stringOfTotalSizeOfPic = totalSizeOfPic.communicate()[0]
     # filepath.cameraLog(str(totalSizeOfPic))
-    print(totalSizeOfPic)
-    print(logging.info(stringOfTotalSizeOfPic))
+    print(stringOfTotalSizeOfPic)
+    logging.info("The Current size is " + str(stringOfTotalSizeOfPic))
 
 
 def checkSizeOfAllLogs():
@@ -29,5 +28,5 @@ def checkSizeOfAllLogs():
         'sudo du -sh logs/'), stdout=subprocess.PIPE)
     stringOfTotalSizeOfLogs = totalSizeOfLogs.communicate()[0]
     # filepath.cameraLog(str(totalSizeOfLogs))
-    print(totalSizeOfLogs)
-    print(logging.info(stringOfTotalSizeOfLogs))
+    print(stringOfTotalSizeOfLogs)
+    logging.info("The Current size is " + str(stringOfTotalSizeOfLogs))
