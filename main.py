@@ -8,6 +8,7 @@ import CheckStorage
 
 def main():
     filepath.cameraLogMkdir()
+    time.sleep(0.5)
     recordVideo.startRec()
     logging.info(" Done Recording")
     print(" Done Recording")
