@@ -51,14 +51,14 @@ def cameraVid(timeStamp):
 
 def cameraLogMkdir():
     try:
-        if os.path.isdir(camera_Log):
+        if os.path.isdir(camera_Log) == False:
             logging.info("Making Dir: " + camera_Log + " !")
             print("Making Dir: " + camera_Log + " !")
             logging.info("Made Dir !")
             print("Made Dir !")
             os.makedirs(camera_Log + toLogs.timeStamp)
 
-        elif os.path.isdir(camera_Log):
+        elif os.path.isdir(camera_Log) == True:
             logging.info("Path: " + camera_Log + " Already exist")
 
     except OSError:
