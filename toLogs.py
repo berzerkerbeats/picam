@@ -14,7 +14,7 @@ if os.path.isdir(filepath.camera_Log) == False:
     print("Made Dir !")
     os.makedirs(filepath.camera_Log + timeStamp)
 
-logging.basicConfig(filename="/home/pi/picam/logs/" + timeStamp, format='%(asctime)s:%(message)s',  level=logging.DEBUG,
+logging.basicConfig(filename="/home/pi/picam/logs/", format='%(asctime)s:%(message)s',  level=logging.DEBUG,
                     datefmt='%m/%d/%Y %I:%M:%S %p')
 
 
