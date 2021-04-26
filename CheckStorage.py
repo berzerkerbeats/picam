@@ -3,6 +3,7 @@ from subprocess import check_output
 import shlex
 import filepath
 import logging
+import re
 
 
 def checkSizeOfAllVidoes():
@@ -12,6 +13,8 @@ def checkSizeOfAllVidoes():
     # filepath.cameraLog(str(stringOfTotalSizeOfVid))
     print(stringOfTotalSizeOfVid)
     logging.info("The Current size is " + str(stringOfTotalSizeOfVid))
+    video_string = re.match(r"\d", str(stringOfTotalSizeOfVid))
+    print(video_string)
 
 
 def checkSizeOfAllPics():
@@ -21,6 +24,8 @@ def checkSizeOfAllPics():
     # filepath.cameraLog(str(totalSizeOfPic))
     print(stringOfTotalSizeOfPic)
     logging.info("The Current size is " + str(stringOfTotalSizeOfPic))
+    pic_string = re.match(r"\d", str(stringOfTotalSizeOfPic))
+    print(pic_string)
 
 
 def checkSizeOfAllLogs():
@@ -30,3 +35,5 @@ def checkSizeOfAllLogs():
     # filepath.cameraLog(str(totalSizeOfLogs))
     print(stringOfTotalSizeOfLogs)
     logging.info("The Current size is " + str(stringOfTotalSizeOfLogs))
+    log_string = re.match(r"\d", str(stringOfTotalSizeOfLogs))
+    print(log_string)
