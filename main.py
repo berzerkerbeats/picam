@@ -4,9 +4,11 @@ import time
 import logging
 import filepath
 import CheckStorage
+import PiCFlask
 
 
 def main():
+    PiCFlask.hello_world()
     filepath.cameraLogMkdir()
     time.sleep(0.5)
     recordVideo.startRec()
