@@ -8,7 +8,7 @@ import PiCFlask
 
 
 def main():
-    PiCFlask.hello_world()
+    # PiCFlask.hello_world()
     filepath.cameraLogMkdir()
     time.sleep(0.5)
     recordVideo.startRec()
@@ -25,5 +25,5 @@ def main():
 
 
 if __name__ == '__main__':
-    PiCFlask.app.run()
+    PiCFlask.app.run(host = ’0.0.0.0’)
     main()
