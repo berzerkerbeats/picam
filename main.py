@@ -25,5 +25,5 @@ def main():
 
 
 if __name__ == '__main__':
-    PiCFlask.app.run(host = '0.0.0.0')
+    PiCFlask.app.run(host = '192.168.0.255', port = '5000')
     main()
