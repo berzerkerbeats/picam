@@ -5,34 +5,11 @@ import logging
 import filepath
 import CheckStorage
 import localh
-
+import os
 
 def main():
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
-    localh.do_Post()
+    os.environ['NO_PROXY'] = '192.168.0.2'
+
     localh.do_Post()
     filepath.cameraLogMkdir()
     time.sleep(0.5)
