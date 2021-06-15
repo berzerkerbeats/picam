@@ -1,5 +1,5 @@
 import requests
 
 def do_Post():
-	requests.post('localhost:8080/post', data={'key':'value'})
+	requests.post('http://localhost:8080/api/post', data={'key':'value'})
 
