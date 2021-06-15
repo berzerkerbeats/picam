@@ -4,11 +4,11 @@ import time
 import logging
 import filepath
 import CheckStorage
-import PiCFlask
+import localh
 
 
 def main():
-    # PiCFlask.hello_world()
+    localh.do_Post()
     filepath.cameraLogMkdir()
     time.sleep(0.5)
     recordVideo.startRec()
@@ -25,5 +25,4 @@ def main():
 
 
 if __name__ == '__main__':
-    PiCFlask.app.run(host = '192.168.0.255', port = '5000')
     main()
