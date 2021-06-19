@@ -19,4 +19,4 @@ def rec(min, path):
     while stringNow != endDate:
         takePic.startPic()
         recordVideo.startRec(min, path)
-        time.sleep(7200)
+        time.sleep(3600)
