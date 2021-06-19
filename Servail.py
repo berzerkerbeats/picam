@@ -10,11 +10,11 @@ stringNow = str(now)
 
 timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 
-min = 60
 
-path = filepath.cameraVid(timeStamp)
 
-def rec():
+
+
+def rec(min, path):
     while stringNow != endDate:
         takePic.startPic()
         recordVideo.startRec(min, path)
