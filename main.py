@@ -6,11 +6,10 @@ import filepath
 import CheckStorage
 import localh
 import os
+import Servail
 
 def main():
-    os.environ['NO_PROXY'] = '192.168.0.2'
-
-    localh.do_Post()
+    
     filepath.cameraLogMkdir()
     time.sleep(0.5)
     recordVideo.startRec()
@@ -24,6 +23,8 @@ def main():
     CheckStorage.checkSizeOfAllPics()
     CheckStorage.checkSizeOfAllLogs()
     print("found the storage size ")
+    print("Starting....")
+    Servail.rec()
 
 
 if __name__ == '__main__':

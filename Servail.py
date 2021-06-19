@@ -16,5 +16,5 @@ path = filepath.cameraVid(timeStamp)
 
 def rec():
     while stringNow != endDate:
-    takePic.startPic()
-    recordVideo.startRec(min, path)
+        takePic.startPic()
+        recordVideo.startRec(min, path)
