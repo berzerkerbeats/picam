@@ -4,19 +4,19 @@ import filepath
 from datetime import datetime
 import time
 
-now = datetime.now()
-endDate = "06_23_2021_11:02:24"
+# now = datetime.now()
+# endDate = "06_23_2021_11:02:24"
 
-stringNow = str(now)
+# stringNow = str(now)
 
-timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
-
-
+# timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 
 
 
-def rec(min, path):
-    while stringNow != endDate:
-        takePic.startPic()
-        recordVideo.startRec(min, path)
-        time.sleep(3600)
+
+
+
+#     while stringNow != endDate:
+#         takePic.startPic()
+#         recordVideo.startRec(min, path)
+#         time.sleep(3600)

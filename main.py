@@ -13,6 +13,20 @@ now = datetime.now()
 
 timeStamp = now.strftime("%m_%d_%Y_%H:%M:%S")
 
+now = datetime.now()
+endDate = "06_23_2021_11:02:24"
+
+stringNow = str(now)
+
+
+
+
+
+
+
+
+    
+
 
 path = filepath.cameraVid(timeStamp)
 
@@ -32,7 +46,11 @@ def main():
     CheckStorage.checkSizeOfAllLogs()
     print("found the storage size ")
     print("Starting....")
-    Servail.rec(60, path)
+    while stringNow != endDate:
+        takePic.startPic()
+        recordVideo.startRec(min, path)
+        time.sleep(3600)
+    
 
 
 if __name__ == '__main__':
